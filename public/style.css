@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#app {
+    position: relative;
+    /* width: 414px; */
+    width: 430px;
+    height: 455px;
+    /* height: 430px; */
+    display: block;
+    margin: 70px auto;  
+    /* margin:  30px for mobile*/
+    text-align: center;
+    padding: 40px 0;
+    overflow: hidden;
+    border-radius: 45px;
+    background-image: linear-gradient(
+        325deg,
+        hsl(240deg 97% 55%) 0%,
+        hsl(240deg 97% 65%) 32%,
+        hsl(240deg 97% 70%) 59%,
+        hsl(240deg 96% 75%) 74%,
+        hsl(240deg 96% 79%) 84%,
+        hsl(240deg 96% 82%) 90%,
+        hsl(240deg 96% 85%) 94%,
+        hsl(240deg 96% 88%) 97%,
+        hsl(240deg 96% 91%) 99%,
+        hsl(240deg 96% 93%) 100%,
+        hsl(240deg 96% 96%) 100%,
+        hsl(240deg 95% 98%) 100%,
+        hsl(0deg 0% 100%) 100%
+    );
+    
+}
+
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchBarInput{
+    background-color: transparent;
+    border-width: 0 0 1px;
+    border-color: white;
+    width: 60%;
+    /* 1rem = 16px */
+    font-size: 1rem;
+}
+.searchBarInput::placeholder{
+    color: white;
+    padding-left: 3px;
+    opacity: 0.4;
+}
+.searchBarInput:focus{
+    color: white;
+    outline: 1px none
+}
+.search-icon{
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+}
+
+.date{
+    margin-top: 14px;
+    font-size: 15px;
+    /* 14px */
+}
+
+.cityName{
+    margin-top: 10px;
+    /* 5px */
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-size: 2rem;
+    /* 1.8 */
+}
+
+.imgContainer i{
+    font-size: 3.2rem;
+    /* 2.8 */
+}
+
+.description {
+    margin-top: 2px;
+    font-size: 1rem;
+    /* 14px */
+}
+
+.temp{
+    margin-top: 28px;
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    /* 1.7 */
+}
+
+.extraInfo{
+    display: flex;
+    justify-content: space-around;
+}
+.tmp{
+    font-size: 1.4rem;
+    margin-top: 6px;
+}
+
+@media (max-width: 400px) {
+    #app {
+      padding: 20px;
+      /* margin: 40px 20px; */
+      max-width: 300px;
+      max-height: 400px;
+      font-size: 1rem;
+    }
+    .tmp{
+        font-size: 1.2rem;
+    }
+    .temp{
+        font-size: 1.6rem;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .imgContainer i{
+        font-size: 2.6rem;
+    }
+    .cityName{
+        margin-top: 5px;
+        font-size: 1.8rem;
+    }
+    .date{
+        font-size: 14px;
+    }
+    .searchBarInput{
+        width: 70%;
+    }
+    .search-icon{
+        font-size: 1.2rem;
+    }
+    .highs{
+        font-size: 0.9rem;
+    }
+    .lows{
+        font-size: 0.9rem;
+    }
+}
+
+
+ 
